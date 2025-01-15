@@ -1,0 +1,97 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #d8cbb3, #9F8069);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container */
+.registration-container {
+    background: #fff;
+    padding: 40px 50px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px; /* Increase max-width */
+    margin: 50px 0; /* Add top and bottom spacing */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header */
+.form-header h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: #9F8069;
+    text-align: center;
+}
+
+.form-header p {
+    margin-bottom: 25px;
+    font-size: 16px;
+    color: #666;
+    text-align: center;
+}
+
+/* Form */
+.form-group {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+input, select {
+    width: 100%;
+    padding: 18px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #555;
+    box-sizing: border-box;
+}
+
+input::placeholder {
+    color: #bbb;
+}
+
+/* Buttons */
+button.submit-btn {
+    width: 100%;
+    padding: 18px;
+    background-color: #9F8069;
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button.submit-btn:hover {
+    background-color: #7e6754;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .registration-container {
+        padding: 20px 30px;
+    }
+
+    input, select, button.submit-btn {
+        padding: 16px;
+    }
+}
